@@ -11,8 +11,21 @@ public class ClearManager : MonoBehaviour {
     public AudioSource Finish_Source;
     public AudioClip FinishSound;
 
+    public Sprite Round1_Image;
+    public Sprite Round2_Image;
+    public Sprite Round3_Image;
+    public Sprite Round4_Image;
+    public Sprite Round5_Image;
 
-  public void Sound_Play()
+    SpriteRenderer sprite_render;
+
+    public void Change_Round()
+    {
+
+    }
+
+
+    public void Sound_Play()
     {
         Finish_Source = GetComponent<AudioSource>();
         Finish_Source.clip = FinishSound;

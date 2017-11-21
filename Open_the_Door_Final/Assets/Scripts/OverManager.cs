@@ -38,7 +38,7 @@ public class OverManager : MonoBehaviour
     {
         //Sibal_Stage = PlayerPrefs.GetInt("Stage");
         Final_Count = PlayerPrefs.GetInt("Score");
-        //Stage.text = string.Format("씨발 : {0}", Sibal_Stage);
+        //Stage.text = string.Format("?? : {0}", Sibal_Stage);
         Final.text = string.Format("최종점수 : {0}", Final_Count);
 
 

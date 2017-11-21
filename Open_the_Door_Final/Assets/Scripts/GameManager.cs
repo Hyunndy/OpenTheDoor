@@ -53,6 +53,10 @@ public class GameManager : MonoBehaviour
     //통과한 스테이지의 숫자를 나타내는 변수 -> 맵 전환에 이용되는 변수.
     public int Count_Clear_Stage;
 
+    //5개의 라운드 -> 클리어 화면에 하교한 아이들을 표시하기 위해 사용되는 변수.
+    public int Count_Clear_Round;
+   
+
 
     //문이 열릴 때 나타내는 사운드를 나타내는 Audio변수.
     public AudioSource Go_Source;
@@ -131,7 +135,7 @@ public class GameManager : MonoBehaviour
 
 ----------------------------------------------------------------------
 */
-    public int Count_Stage_No()
+    public int Get_Count_Stage()
     {
         return PlayerPrefs.GetInt("Stage");
     }
